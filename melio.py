@@ -43,7 +43,7 @@ async def oof(ctx):
     await ctx.send("Yes, that's me")
 
 @client.command()
-async def oof2(ctx):
+async def oo(ctx):
     await ctx.send("Yes, that's me...2?")
 
 @client.command()
