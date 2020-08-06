@@ -27,7 +27,7 @@ async def runpend():
     while True:
         channel = client.get_channel(656490287090237450)
         await channel.send(f"<@&655892806035963951>, {random.choice(praypuns)}")
-        await asyncio.sleep(21600000)
+        await asyncio.sleep(21600)
 
 
 @client.event
