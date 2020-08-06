@@ -35,6 +35,7 @@ async def on_ready():
     print("Online!")
     print("Logged in as "+ str(client.user.name))
     print("ID: " + str(client.user.id))
+    print('Ver 1.0.0')
     print('------')
     #client.change_presence(game=discord.Game("Use o!help"))
 
