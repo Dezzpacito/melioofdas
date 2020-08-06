@@ -43,6 +43,10 @@ async def oof(ctx):
     await ctx.send("Yes, that's me")
 
 @client.command()
+async def oof2(ctx):
+    await ctx.send("Yes, that's me...2?")
+
+@client.command()
 async def pray(ctx):
     channel = client.get_channel(740792288858603633)
     await channel.send('Starting!')
