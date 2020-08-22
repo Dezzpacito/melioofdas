@@ -29,13 +29,19 @@ async def runpend():
         await channel.send(f"<@&655892806035963951>, {random.choice(praypuns)}")
         await asyncio.sleep(21600)
 
+async def runpend2():
+    while True:
+        channel = client.get_channel(746622809878560800)
+        await channel.send(f"MESSAGE SENT FOR ALIVE")
+        await asyncio.sleep(1800)
+
 
 @client.event
 async def on_ready():
     print("Online!")
     print("Logged in as "+ str(client.user.name))
     print("ID: " + str(client.user.id))
-    print('Ver 1.0.0')
+    print('Ver 1.0.1')
     print('------')
     #client.change_presence(game=discord.Game("Use o!help"))
 
@@ -52,5 +58,11 @@ async def pray(ctx):
     channel = client.get_channel(740792288858603633)
     await channel.send('Starting!')
     client.loop.create_task(runpend())
+
+@client.command()
+async def pray(ctx):
+    channel = client.get_channel(740792288858603633)
+    await channel.send('I SHALL LIVE ON!')
+    client.loop.create_task(runpend2())
 
 client.run(token)
